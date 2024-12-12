@@ -66,3 +66,33 @@ int main()
     }
     return 0;
 }
+
+
+// 另一种解也放这里了
+/*#include<stdio.h>
+struct txl{
+    char xm[11];
+    char cs[11];
+    char xb;
+    char gd[17];
+    char yd[17];
+}stu[100];
+
+int main()
+{
+    int i,N,K,id;
+    scanf("%d",&N);
+    getchar();
+    for(i=0;i<N;i++)
+        scanf("%s %s %c %s %s",stu[i].xm,stu[i].cs,&stu[i].xb,stu[i].gd,stu[i].yd);
+    scanf("%d",&K);
+    for(i=0;i<K;i++){
+        scanf("%d",&id);
+        if(id >= 0 && id < N){
+            printf("%s %s %s %c %s\n",stu[id].xm,stu[id].gd,stu[id].yd,stu[id].xb,stu[id].cs);
+        }
+        else{
+            printf("Not Found\n");
+        }
+    }
+}*/
