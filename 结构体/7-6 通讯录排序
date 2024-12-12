@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct fri{
+    char name[10];
+    int birthday;
+    char number[17];
+}a[10],t;
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%s %d %s",a[i].name,&a[i].birthday,a[i].number);
+    }
+    for(i=0;i<n-1;i++)
+    {
+        for(j=i;j<n;j++)
+        {
+            if(a[i].birthday>a[j].birthday)
+            {
+                t=a[i];
+                a[i]=a[j];
+                a[j]=t;
+            }
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%s %d %s\n",a[i].name,a[i].birthday,a[i].number);
+    }
+    return 0;
+
+}
