@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
+#include <bits/stdc++.h>
 #define MAX_DISHES 100
 #define MAX_ORDERS 100
 
