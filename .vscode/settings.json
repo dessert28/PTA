@@ -66,6 +66,9 @@
         "scoped_allocator": "cpp",
         "shared_mutex": "cpp",
         "thread": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "charconv": "cpp",
+        "optional": "cpp",
+        "string_view": "cpp"
     }
 }
